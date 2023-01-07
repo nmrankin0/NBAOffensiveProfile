@@ -14,6 +14,7 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import os
+import gcsfs
 
 
 ####################################
@@ -73,11 +74,14 @@ def build_modal_info_overlay(id, side, content):
 #df_clus = pd.read_excel("C:\\Users\\nrankin\\PycharmProjects\\Portfolio\\NBAOffensiveProfile\\DashApp\\Dev\\AllSeasons_ClusteredFreqs.xlsx")
 #df_freq_eff = pd.read_excel("C:\\Users\\nrankin\\PycharmProjects\\Portfolio\\NBAOffensiveProfile\\DashApp\\Dev\\AllSeasons_PlayTypeStats.xlsx")
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'C:\\Users\\nrankin\\PycharmProjects\\Portfolio\\GCP\\clientcreds_storage_sa.json'
 bucket_name = 'nmrankin0_nbaappfiles'
 
-df_clus = pd.read_csv('gs://' + bucket_name + '/AllSeasons_ClusteredFreqs.csv')
-df_freq_eff = pd.read_csv('gs://' + bucket_name + '/AllSeasons_PlayTypeStats.csv')
+fs = gcsfs.GCSFileSystem(project='nbaoffensiveprofile', token=os.environ.get('GOOGLE_APPLICATION_CREDENTIALS'))
+with fs.open('gs://' + bucket_name + '/AllSeasons_ClusteredFreqs.csv') as f:
+    df_clus = pd.read_csv(f)
+
+with fs.open('gs://' + bucket_name + '/AllSeasons_PlayTypeStats.csv') as f:
+    df_freq_eff = pd.read_csv(f)
 
 # Season dropdown
 season_dd = df_clus['SEASON'].unique().tolist()
