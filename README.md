@@ -11,7 +11,7 @@ This is achieved through clustering NBA player's based on how often they engage 
 
 Users can also explore player efficiency for each applicable play-type.
 
-*FOR MORE INFORMATION, AND TO LEARN HOW TO USE THE WEB APP, PLEASE VISIT THE WEB APP LINK ABOVE AND CLICK ON THE QUESTION MARK SYMBOLS:*
+(**FOR MORE INFORMATION, AND TO LEARN HOW TO USE THE WEB APP, PLEASE VISIT THE WEB APP LINK ABOVE AND CLICK ON THE QUESTION MARK SYMBOLS:**)
 
 ![image](https://user-images.githubusercontent.com/45741484/211229197-2e29ad91-0f0d-4f05-9f84-228d74185142.png)
 
