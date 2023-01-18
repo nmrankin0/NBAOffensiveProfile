@@ -8,9 +8,7 @@ Web App Link: [Explore NBA Player Offensive Profiles Here](http://nmrankin0.pyth
 The purpose of this project is to generate a web application where NBA fans can explore the similarities and difference between different player's offensive profiles.
 
 **-"How has James role and efficiency changed since he was traded to Philadelphia?"**
-
 **-"What player's offensive play-style is most similar to Scottie Barnes'?"**
-
 **-"Who is a better offensive role player, Duncan Robinson or Grayson Allen?"**
 
 **These are all questions that can be explored using this web application**
