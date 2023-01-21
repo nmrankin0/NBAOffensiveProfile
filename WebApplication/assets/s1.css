@@ -413,6 +413,18 @@ there.
   box-shadow: 1px 1px 1px slategrey;
 }
 
+.pretty_container_highlight {
+  border-radius: 5px;
+  background-color: #f3f3f1;  /* Mapbox light map land color */     /*#f8ee35 new ; #f3f3f1 orig*/
+  margin: 1%;
+  padding: 1%;
+  position: relative;
+  box-shadow: 1px 1px 1px slategrey;
+  outline-style: solid;
+  outline-color: #f8ee35;
+  outline-width: medium;
+}
+
 .container_title {
   margin-top: 0;
   margin-bottom: 0.2em;

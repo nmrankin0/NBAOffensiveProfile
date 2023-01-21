@@ -188,7 +188,7 @@ app.layout = html.Div(
                 html.Div(children=
                     [
                     html.Div(children=[html.H6("Select Season(s)"), dcc.Dropdown(id='season-dd', options=season_dd, clearable=False, value=['2022-23', '2021-22'], multi=True,  placeholder="Select 1 or More Seasons")], className="four columns pretty_container"),
-                    html.Div(children=[html.H6("Select Players from Season(s)"), dcc.Dropdown(id='player-dd', options=player_dd, multi=True, placeholder="Select 1 or More Players")], className="eight columns pretty_container", style={'display': 'inline-block'})
+                    html.Div(children=[html.H6("Select Players from Season(s)"), dcc.Dropdown(id='player-dd', options=player_dd, multi=True, placeholder="Select 1 or More Players")], className="eight columns pretty_container_highlight", style={'display': 'inline-block'})
                     ]
                 ),
 
