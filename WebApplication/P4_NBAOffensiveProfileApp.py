@@ -208,9 +208,10 @@ app.layout = html.Div(
         # App Details
         html.Div([html.H4("Dashboard Details", style={"margin-top": "0"}), dcc.Markdown(
         """
+         - Link to [Background Information and Code] (https://github.com/nmrankin0/NBAOffensiveProfile)
          - Dashboard written in Python using the [Dash](https://dash.plot.ly/) web framework, leveraging [Elliot Gunn's] (https://github.com/elliotgunn) World Cell Tower's Dashboard CSS
          - Data is sourced from [NBA.com's Play-Type Stats] (https://www.nba.com/stats/players/isolation)
-         - Currently, the data in this app is static. The data will soon be updated on a daily basis using [Docker] (https://docs.docker.com/) and [Google Cloud Platform's Compute Engine] (https://cloud.google.com/compute)
+         - Currently, the data in this app is static. Next season, the data will be updated on a daily basis using [Docker] (https://docs.docker.com/) and [Google Cloud Platform's Compute Engine] (https://cloud.google.com/compute)
          - Play-Type frequency clusters are computed using the [K-Means Algorithm] (https://en.wikipedia.org/wiki/K-means_clustering) from the sklearn python module
          - Play-Type frequency clusters are visualized using [Principal Component Analysis] (https://en.wikipedia.org/wiki/Principal_component_analysis) from the sklearn python module
         """
