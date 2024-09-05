@@ -5,23 +5,20 @@
 Web App Link: [Explore NBA Player Offensive Profiles Here](http://nmrankin0.pythonanywhere.com/)
 
 ## About the Application
-The purpose of this project is to generate a web application where NBA fans can explore the similarities and difference between different player's offensive profiles.
+The purpose of this project is to create a web application for NBA fans to explore and analyze the offensive profiles of different players.
 
+With this app, you can answer questions like:
 **-"How has James Harden's role and efficiency changed since he was traded to Philadelphia?"**
 
 **-"What player's offensive play-style is most similar to Scottie Barnes'?"**
 
 **-"Who is a better offensive role player, Duncan Robinson or Grayson Allen?"**
 
-**These are all questions that can be explored using this web application**
+The web app clusters NBA players based on how frequently they use various offensive _**play-types**_ such as Transition, Isolation, Pick & Roll Ball Handler, Pick & Roll Roll Man, Post Up, Spot Up, and more.
 
+Users can select and compare players to explore their offensive play-type frequencies and efficiencies in detail.
 
-This is achieved through clustering NBA player's based on how often they engage in each of the following offensive _**play-types**_:  
-- Transition, Isolation, Pick & Roll Ball Handler, Pick & Roll Roll Man, Post Up, Spot Up, Handoff, Cut, Off Screen, Putbacks, Misc
-
-Users can then select players to explore and compare their play-type frequencies and efficiencies.
-
-**FOR MORE INFORMATION, AND TO LEARN HOW TO USE THE WEB APP, PLEASE VISIT THE WEB APP LINK ABOVE AND CLICK ON THE QUESTION MARK SYMBOLS:**
+**For more information and to learn how to use the web app, click on the question mark symbols in the app interface.:**
 
 ![image](https://user-images.githubusercontent.com/45741484/211229197-2e29ad91-0f0d-4f05-9f84-228d74185142.png)
 
@@ -30,7 +27,7 @@ Users can then select players to explore and compare their play-type frequencies
 
 2. Collect, manipulate, and transform the stored dataframes to prepare the data for clustering.
 
-3. Identify the optimal number of clusters using the elbow-method and perform K-Means clustering.
+3. Identify the optimal number of clusters using the silhoutte score and perform K-Means clustering.
 
 4. Reduce the 11 inputs used for clustering (i.e., play-type frequencies) down to 2 dimensions using PCA for the purpose of cluster visualization.
 
