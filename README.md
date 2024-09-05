@@ -8,6 +8,7 @@ Web App Link: [Explore NBA Player Offensive Profiles Here](http://nmrankin0.pyth
 The purpose of this project is to create a web application for NBA fans to explore and analyze the offensive profiles of different players.
 
 With this app, you can answer questions like:
+
 **-"How has James Harden's role and efficiency changed since he was traded to Philadelphia?"**
 
 **-"What player's offensive play-style is most similar to Scottie Barnes'?"**
